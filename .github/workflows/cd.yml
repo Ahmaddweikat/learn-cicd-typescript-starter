@@ -31,3 +31,6 @@ jobs:
 
       - name: Build and push Docker image
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/careful-rock-491613-v0/notely-ar-repo/notely:latest .
+
+      - name: Build and push Docker image
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/careful-rock-491613-v0/notely-ar-repo/notely:latest . --suppress-logs
