@@ -32,9 +32,4 @@ describe("getAPIKey", () => {
     expect(typeof key).toBe("string");
     expect(key).toBe("abc123");
   });
-
-  test("returns the API key when header is valid", () => {
-    const key = getAPIKey({ authorization: "ApiKey my-secret-key" });
-    expect(key).toBe("WRONG-VALUE"); // intentionally broken
-  });
 });
